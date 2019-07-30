@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Vikas Pejaver"
   avatar           : "profile.png"
-  bio              : "Postdoctoral fellow working at the intersection of biomedical data science, genomics and machine learning"
+  bio              : "Postdoctoral fellow working at the intersection of biomedical data science, computational biology and machine learning"
   location         : "Seattle, Washington"
   employer         : "University of Washington"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=vikas+pejaver"
+  pubmed           : "http://www.ncbi.nlm.nih.gov/pubmed/?term=vikas+pejaver"
   googlescholar    : "http://scholar.google.com/citations?user=hKTUdOoAAAAJ&hl=en&oi=ao"
-  email            :
+  email            : "vpejaver [at] uw [dot] edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "http://www.linkedin.com/in/vikas-pejaver"
   orcid            : "http://orcid.org/0000-0002-1943-0284"
   pinterest        :
   soundcloud       :
