@@ -87,7 +87,7 @@ author:
   employer         : "University of Washington"
   pubmed           : "http://www.ncbi.nlm.nih.gov/pubmed/?term=vikas+pejaver"
   googlescholar    : "http://scholar.google.com/citations?user=hKTUdOoAAAAJ&hl=en&oi=ao"
-  email            : "vpejaver [at] uw [dot] edu"
+  email            : "vpejaver@uw.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -182,7 +182,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: false
+    output: true
     permalink: /:collection/:path/
   talks:
     output: true
@@ -228,14 +228,14 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  #- scope:
-  #    path: ""
-  #    type: portfolio
-  #  values:
-  #    layout: single
-  #    author_profile: true
-  #    share: true
-  #    comment: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
   - scope:
       path: ""
