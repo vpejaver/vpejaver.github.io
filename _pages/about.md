@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a Moore/Sloan and Washington Research Foundation Innovation in Data Science Postdoctoral Fellow at the [Department of Biomedical Informatics and Medical Education](http://bime.uw.edu/) and the [eScience Insitute](https://escience.washington.edu/) at the [University of Washington](https://www.washington.edu/). I recently received an K99/R00 Pathway to Independence Award from the [National Library of Medicine](https://www.nlm.nih.gov/) at the [National Institutes of Health](https://www.nih.gov/) for the development of computational methods to support the disovery and diagnosis of rare genetic disorders in electronic health records.
+I am a Moore/Sloan and Washington Research Foundation Innovation in Data Science Postdoctoral Fellow at the [Department of Biomedical Informatics and Medical Education](http://bime.uw.edu/) and the [eScience Insitute](https://escience.washington.edu/) at the [University of Washington](https://www.washington.edu/). I recently received an K99/R00 Pathway to Independence Award from the [National Library of Medicine](https://www.nlm.nih.gov/) at the [National Institutes of Health](https://www.nih.gov/) for the development of computational methods to support the disovery, screening and diagnosis of rare genetic disorders from electronic health records.
+
+Before coming to Seattle, I received my Master's degree in Bioinformatics and doctoral degree in Informatics from the School of Informatics and Computing (now [School of Informatics, Computing and Engineering](https://sice.indiana.edu/)) at Indiana University, Bloomington. Under the advisorship of [Dr. Predrag Radivojac](https://www.ccs.neu.edu/home/radivojac/), my doctoral dissertation focused on computational methods for understanding the impact of amino acid substitutions on protein function. Prior to my graduate studies, I received my Bachelor's degree in Biotechnology from the People's Education Society (PES) Insitute of Technology (now [PES University](www.pes.edu)) in Bengaluru, India.
 
 
 <!--Research Interests
