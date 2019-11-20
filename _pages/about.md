@@ -12,9 +12,6 @@ I am a Moore/Sloan and Washington Research Foundation Innovation in Data Science
 
 Before coming to Seattle, I received my Master's degree in Bioinformatics and doctoral degree in Informatics from the School of Informatics and Computing (now [School of Informatics, Computing and Engineering](https://sice.indiana.edu/)) at Indiana University, Bloomington. Under the advisorship of [Dr. Predrag Radivojac](https://www.ccs.neu.edu/home/radivojac/), my doctoral dissertation focused on computational methods for understanding the impact of amino acid substitutions on protein function. Prior to my graduate studies, I received my Bachelor's degree in Biotechnology from the People's Education Society (PES) Insitute of Technology (now [PES University](www.pes.edu)) in Bengaluru, India.
 
-Research Interests
-======
-
 <!--Research Interests
 ======
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.-->
