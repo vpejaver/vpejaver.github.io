@@ -21,6 +21,7 @@ Past and present collaborators
 * [Critical Assessment of Genome Interpretation](https://genomeinterpretation.org/)
 * [ClinGen Sequence Variant Interpretation Group](https://clinicalgenome.org/working-groups/sequence-variant-interpretation/)
 * [David Clemmer](https://clemmer.lab.indiana.edu/)
+* [Institute of Translational Health Sciences](https://www.iths.org/)
 * [Jennifer Puck](https://profiles.ucsf.edu/jennifer.puck)
 * [Lilia M. Iakoucheva](http://iakouchevalab.ucsd.edu/index.html)
 * [Matthew Hahn](https://hahnlab.sitehost.iu.edu/)
