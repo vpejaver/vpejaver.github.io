@@ -1,7 +1,7 @@
 ---
+layout: archive
+title: "Miscellany"
 permalink: /misc/
-title: ""
-excerpt: "Miscellany"
 author_profile: true
   - /media
   - /collaborators
