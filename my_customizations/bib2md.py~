@@ -1,0 +1,64 @@
+#!/usr/bin/env python
+
+# Script to parse bibtex file and generate a markdown file for my website
+
+#from pybtex.database.input import bibtex
+#import pybtex.database.input.bibtex 
+#from time import strptime
+from pybtex.database import parse_file
+import argparse
+import string
+import html
+import os
+import re
+
+
+## HELPER FUNCTIONS
+# Function to generate formatted markdown
+def md_output(key, value):
+    md_text = ''
+
+    name = '2009-10-01-paper-title-number-1'
+    paper_title = 'Paper Title Number 1'
+    year = 2009
+    journal = 'Journal 1'
+    url = 'http://academicpages.github.io/files/paper1.pdf'
+    citation = 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+    
+    md_text += '---\n'
+    md_text += 'title: "%s"\n' % paper_title # Paper title
+    md_text += 'collection: "publications\n'
+    md_text += 'permalink: /publication/%s\n' % name # Link
+    md_text += 'data: %d-01-01\n' % year # Year
+    md_text += 'venue: \'%s\'\n' % journal # Journal
+    md_text += 'paperurl: \'%\'\n' % url # URL
+    md_text += '%s\n' % citation # Citation
+    md_text += '---\n'
+    md_text += '[Download paper here](%s)\n\n' % url
+    md_text += 'Recommended citation: %s\n' % citation
+    
+    return md_text
+
+## MAIN
+if __name__ == '__main__':
+    
+    # Constants and defaults
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-b', '--bibfile', help='<Bibtex file containing references>')
+    parser.add_argument('-o', '--outdir', help='<Output directory to place markdown files>')
+
+    # Parse arguments
+    args = parser.parse_args()
+    
+    # Check parameters
+    if args.bibfile:
+        bibfile = args.bibfile
+    if args.outdir:
+        outdir = args.outdir
+
+    # Read in bibtex file
+    bib_data = parse_file(bibfile)
+    for k in sorted(bib_data.entries, key=str.lower):
+        out_str = md_output(k, bib_data.entries[k])
+        print(out_str)
+        
