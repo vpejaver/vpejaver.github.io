@@ -36,7 +36,7 @@ def formatted_citation(bib):
     reference += '%s(%s) ' % (bib.fields['volume'], bib.fields['number'])
     reference += ('%s.' % bib.fields['pages']).replace('--', '-')
     
-    reference = reference.replace('Pejaver, V', '*Pejaver, V*')
+    reference = reference.replace('Pejaver V', '*Pejaver V*')
     #print(reference)
     return reference
 
@@ -58,7 +58,7 @@ def md_output(key, value):
     md_text += 'date: %s-01-01\n' % year # Year
     md_text += 'venue: \'%s\'\n' % journal # Journal
     md_text += 'paperurl: \'%s\'\n' % url # URL
-    md_text += '%s\n' % citation # Citation
+    md_text += 'citation: %s\n' % citation # Citation
     md_text += '---\n'
     md_text += '[Download paper here](%s)\n\n' % url
     md_text += 'Recommended citation: %s\n' % citation
