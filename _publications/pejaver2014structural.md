@@ -1,7 +1,8 @@
 ---
 title: "The structural and functional signatures of proteins that undergo multiple events of post-translational modification"
-collection: "publications"
+collection: publications
 permalink: /publication/pejaver2014structural
+excerpt: ''
 date: 2014-01-01
 venue: 'Protein Science'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'

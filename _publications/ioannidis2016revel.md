@@ -1,7 +1,8 @@
 ---
 title: "REVEL: an ensemble method for predicting the pathogenicity of rare missense variants"
-collection: "publications"
+collection: publications
 permalink: /publication/ioannidis2016revel
+excerpt: ''
 date: 2016-01-01
 venue: 'The American Journal of Human Genetics'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
