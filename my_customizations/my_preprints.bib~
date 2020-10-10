@@ -1,6 +1,6 @@
 @article{mooney2018big,
   title={Big data in public health: terminology, machine learning, and privacy},
-  author={Mooney, S. J. and Pejaver, V.},
+  author={Mooney, S. J. and Pejaver, V. and
   journal={Annu. Rev. Public Health},
   volume={39},
   number={},
@@ -57,14 +57,13 @@
   publisher={}
 }
 
-@article{fernandes2020insights,
+@article{fernandes2019insights,
   title={A survey-based analysis of the academic job market},
   author={Fernandes, J. D. and Sarabipour, S. and Smith, C. T. and Niemi, N. M. and Jadavji, N. M. and Kozik, A. J. and Holehouse, A. S. and Pejaver, V. and Symmons, O. and Filho, A. W. B. and Haage, A.},
   journal={eLife},
   volume={9},
   number={e54097},
   pages={},
-  year={2020},
   month={Jun},
   publisher={}
 }
@@ -263,7 +262,7 @@
 
 @article{suzuki2015draft,
   title={Draft genome sequence of \textit{Caedibacter varicaedens}, a Kappa killer endosymbiont bacterium of the ciliate \textit{Paramecium biaurelia}},
-  author={Suzuki, H. and Dapper, A. L. and Jackson, C. E. and Lee, H. and Pejaver, V. and  Doak, T. G. and Lynch, M. and Preer Jr., J. R.},
+  author={Suzuki, H. and Dapper, A. L. and Jackson, C. E. and Lee, H. and Pejaver, V. and  Doak, T. G. and Lynch, M. and Preer Jr., J. R. and
   journal={Genome Announc.},
   volume={3},
   number={6},
@@ -311,7 +310,7 @@
 
 @article{pejaver2011gene,
   title={Gene {C}luster {P}rofile {V}ectors: a method to infer functionally related gene sets by grouping proximity-based gene clusters},
-  author={Pejaver, V. R. and Kim, S.},
+  author={Pejaver, V. R.} and Kim, S.},
   journal={BMC Genomics},
   volume={12},
   number={Suppl 2 - IEEE International Conference on Bioinformatics and Biomedicine 2010 },
