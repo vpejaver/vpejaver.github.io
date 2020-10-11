@@ -41,7 +41,7 @@ def formatted_citation(bib):
 
     # formatting changes
     reference = reference.replace('Pejaver V', '<b>Pejaver V</b>')
-    reference = reference.replace('*', '\*')
+    #reference = reference.replace('*', '\*')
     reference = reference.replace('\string^', '^')
     reference = reference.replace('\\?', '')
     
