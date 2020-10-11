@@ -72,11 +72,11 @@ def md_output(key, value):
     md_text += 'excerpt: \'\'\n' # Excerpt (nothing for now)
     md_text += 'date: %s-%s-01\n' % (year, MONTHS[month]) # Year and month
     md_text += 'venue: \'%s\'\n' % journal # Journal
-    md_text += 'paperurl: \'%s\'\n' % url # URL
+    #md_text += 'paperurl: \'%s\'\n' % url # URL
     md_text += 'citation: \'%s\'\n' % citation # Citation
     md_text += '---\n'
     md_text += '[Download paper here](%s)\n\n' % url
-    md_text += 'Recommended citation: %s\n' % citation
+    #md_text += 'Recommended citation: %s\n' % citation
     
     return md_text, name
 
