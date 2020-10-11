@@ -28,7 +28,7 @@ def formatted_citation(bib):
         else:
             reference += name + ', '
     reference += ' (%s) ' % bib.fields['year']
-    reference += ('%s. ' % bib.fields['title'].replace('{', '')).replace('}', '')
+    reference += '%s. ' % ((bib.fields['title'].replace('{', '')).replace('}', '')).replace('\textit', '')
     if 'journal' in bib.fields:
         reference += '<i>%s</i> ' % bib.fields['journal']
     elif 'booktitle' in bib.fields:
@@ -36,13 +36,14 @@ def formatted_citation(bib):
     if 'volume' in bib.fields and 'number' in bib.fields:
         reference += '%s(%s) ' % (bib.fields['volume'], bib.fields['number'])
     elif 'volume' in bib.fields:
-        reference += '%s(%s) ' % (bib.fields['volume'])
+        reference += '%s ' % (bib.fields['volume'])
     reference += ('%s.' % bib.fields['pages']).replace('--', '-')
 
     # formatting changes
     reference = reference.replace('Pejaver V', '<b>Pejaver V</b>')
+    reference = reference.replace('Pejaver VR', '<b>Pejaver VR</b>')
     #reference = reference.replace('*', '\*')
-    reference = reference.replace('\string^', '^')
+    reference = reference.replace('\string', '')
     reference = reference.replace('\\?', '')
     
     return reference
@@ -52,7 +53,7 @@ def md_output(key, value):
     md_text = ''
 
     # initialize variables
-    paper_title = (value.fields['title'].replace('{', '')).replace('}', '')
+    paper_title = ((value.fields['title'].replace('{', '')).replace('}', '')).replace('\textit', '')
     year = value.fields['year']
     month = value.fields['month']
     if 'journal' in value.fields:
