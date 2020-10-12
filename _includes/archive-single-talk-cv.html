@@ -36,7 +36,7 @@
     <h3 class="archive__item-title" itemprop="headline">
       {{ title }}
     </h3>
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%Y' }}</p>{% endif %}
+    {% if post.date %}<p class="page__meta"><i aria-hidden="true"></i> {{ post.date | date: '%Y' }}</p>{% endif %}
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} at {{ post.venue }},  {{post.location}}</p>{% endif %}
     </li>
   </article>
