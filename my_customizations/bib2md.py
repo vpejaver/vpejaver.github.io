@@ -51,7 +51,7 @@ def formatted_citation(bib):
     #reference = reference.replace('*', '\*')
     reference = reference.replace('string', '')
     reference = reference.replace('\\?', '')
-    reference = reference.replace('\textit', '')
+    reference = reference.replace('\\textit', '')
     
     return reference
 
@@ -60,7 +60,7 @@ def md_output(key, value):
     md_text = ''
 
     # initialize variables
-    paper_title = ((value.fields['title'].replace('{', '')).replace('}', '')).replace('\textit', '')
+    paper_title = ((value.fields['title'].replace('{', '')).replace('}', '')).replace('\\textit', '')
     year = value.fields['year']
     month = value.fields['month']
     if 'journal' in value.fields:
