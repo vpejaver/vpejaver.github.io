@@ -14,15 +14,17 @@ def formatted_citation(bib):
     for i in range(len(bib.persons['author'])):
         if '{' in bib.persons['author'][i].last_names[0] and '}' in bib.persons['author'][i].last_names[0]:
             name = re.sub('\{|\}|\?', '', bib.persons['author'][i].last_names[0])
+        elif bib.persons['author'][i].last_names[0] == '$...$':
+            name = '..., ' + bib.persons['author'][i].last_names[1] + ' ' + bib.persons['author'][i].first_names[0][0]
         elif bib.persons['author'][i].last_names[0] == 'others':
             name = '<i>et al.</i>'
         elif bib.persons['author'][i].middle_names == []:
             name = bib.persons['author'][i].last_names[0] + ' ' + bib.persons['author'][i].first_names[0][0]
         else:
             name = (bib.persons['author'][i].last_names[0]) + ' ' + bib.persons['author'][i].first_names[0][0] + bib.persons['author'][i].middle_names[0][0]
-        name = name.replace('$...$', '...')
+        #name = name.replace('$...$', '...')
         name = name.replace('\\', '')
-
+        
         if i == len(bib.persons['author'])-1:
             reference += name
         else:
@@ -40,8 +42,8 @@ def formatted_citation(bib):
     reference += ('%s.' % bib.fields['pages']).replace('--', '-')
 
     # formatting changes
-    reference = reference.replace('Pejaver V', '<b>Pejaver V</b>')
     reference = reference.replace('Pejaver VR', '<b>Pejaver VR</b>')
+    reference = reference.replace('Pejaver V', '<b>Pejaver V</b>')
     #reference = reference.replace('*', '\*')
     reference = reference.replace('\string', '')
     reference = reference.replace('\\?', '')
