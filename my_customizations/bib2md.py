@@ -36,17 +36,22 @@ def formatted_citation(bib):
     elif 'booktitle' in bib.fields:
         reference += '<i>%s</i> ' % bib.fields['booktitle']
     if 'volume' in bib.fields and 'number' in bib.fields:
-        reference += '%s(%s) ' % (bib.fields['volume'], bib.fields['number'])
+        if bib.fields['number'] != '':
+            reference += '%s(%s) ' % (bib.fields['volume'], bib.fields['number'])
+        else:
+            reference += '%s ' % bib.fields['volume']
     elif 'volume' in bib.fields:
-        reference += '%s ' % (bib.fields['volume'])
+        reference += '%s ' % bib.fields['volume']
+        
     reference += ('%s.' % bib.fields['pages']).replace('--', '-')
 
     # formatting changes
-    reference = reference.replace('Pejaver VR', '<b>Pejaver VR</b>')
     reference = reference.replace('Pejaver V', '<b>Pejaver V</b>')
+    reference = reference.replace('<b>Pejaver V</b>R', '<b>Pejaver VR</b>')
     #reference = reference.replace('*', '\*')
-    reference = reference.replace('\string', '')
+    reference = reference.replace('string', '')
     reference = reference.replace('\\?', '')
+    reference = reference.replace('\textit', '')
     
     return reference
 
