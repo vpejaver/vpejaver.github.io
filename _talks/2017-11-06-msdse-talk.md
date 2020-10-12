@@ -4,6 +4,6 @@ collection: talks
 type: "Talk"
 permalink: /talks/2017-11-06-msdse-talk
 venue: "Moore-Sloan Data Science Environment Summit"
-date: 2017
+date: 2017-11-06
 location: "New Orleans, Louisiana"
 ---
