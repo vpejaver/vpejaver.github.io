@@ -30,7 +30,8 @@ def formatted_citation(bib):
         else:
             reference += name + ', '
     reference += ' (%s) ' % bib.fields['year']
-    reference += '%s. ' % ((bib.fields['title'].replace('{', '')).replace('}', '')).replace('\textit', '')
+    reference += '%s. ' % ((bib.fields['title'].replace('{', '')).replace('}', '')).replace('\textit', '<i>')
+
     if 'journal' in bib.fields:
         reference += '<i>%s</i> ' % bib.fields['journal']
     elif 'booktitle' in bib.fields:
@@ -51,7 +52,7 @@ def formatted_citation(bib):
     #reference = reference.replace('*', '\*')
     reference = reference.replace('string', '')
     reference = reference.replace('\\?', '')
-    reference = reference.replace('\\textit', '')
+    reference = reference.replace('\\textit', '<i>')
     
     return reference
 
@@ -60,7 +61,7 @@ def md_output(key, value):
     md_text = ''
 
     # initialize variables
-    paper_title = ((value.fields['title'].replace('{', '')).replace('}', '')).replace('\\textit', '')
+    paper_title = ((value.fields['title'].replace('{', '')).replace('}', '')).replace('\\textit', '<i>')
     year = value.fields['year']
     month = value.fields['month']
     if 'journal' in value.fields:
